@@ -29,7 +29,6 @@ main {
 #header h1 {
     font-size: 24px;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 #header p {
     font-size: 14px;
@@ -52,14 +51,14 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 2px;
-    background-color: #00000010;
+    background-color: rgba(0,0,0,0.1);
     border-radius: 10px;
 }
 #ground > div {
-    background-color: #00000020;
+    background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
     transition: all .1s ease;
 }
 #ground > div:hover {
-    background-color: #00000040 !important;
+    background-color: rgba(0, 0, 0, .4) !important;
 }
