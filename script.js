@@ -26,6 +26,10 @@ function playingTime() {
 function clickListener(event) {
     if (event.target.style.backgroundImage) {
         score.innerText = Number(score.innerText)+1;
+        event.target.style.backgroundImage = "url('whack.jpg')"
+        setTimeout(() => {
+            event.target.style.backgroundImage=""
+        }, moleTime)
         moleTime -= 5;
     } 
     else { score.innerText = Number(score.innerText)-1 };
